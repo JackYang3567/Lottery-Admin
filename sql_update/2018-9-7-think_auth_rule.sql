@@ -1,0 +1,161 @@
+/*
+SQLyog Ultimate v12.08 (64 bit)
+MySQL - 5.5.53 
+权限更新
+*********************************************************************
+*/
+/*!40101 SET NAMES utf8 */;
+
+create table `think_auth_rule` (
+	`id` mediumint (8),
+	`name` char (720),
+	`title` char (180),
+	`type` tinyint (1),
+	`status` tinyint (1),
+	`condition` char (765),
+	`Superior_id` tinyint (100)
+); 
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('127','djycpgk/authority/ordinary_delete','删除代理普通用户','4','1','删除代理普通用户','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('125','djycpgk/authority/ordinaryadd','添加普通用户','4','1','添加普通用户','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('123','djycpgk/authority/secondlist','二级代理列表','4','1','二级代理列表','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('121','djycpgk/authority/proxy_delete','删除顶级代理线','4','1','删除顶级代理线','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('119','djycpgk/authority/proxyadd','添加顶级代理','4','1','添加顶级代理','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('113','djycpgk/system/object_to_array','系统对象转数组','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('111','djycpgk/system/chatconfig','聊天室设置','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('109','djycpgk/system/newslist','系统轮播图关联新闻','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('107','djycpgk/system/importbak','恢复备份','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('105','djycpgk/system/backupall','备份数据库','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('103','djycpgk/system/log_clear','清楚缓存','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('101','djycpgk/system/bank_add','系统收款银行添加','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('99','djycpgk/system/bank_pay','系统收款银行设置','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('97','djycpgk/system/imgupload','系统上传文件','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('95','djycpgk/system/ppt_update','系统修改轮播图','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('93','djycpgk/system/recharge_setting','系统保存充值设置','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('91','djycpgk/system/recharge','系统充值设置','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('89','djycpgk/article/dltCategory','删除文章分类','5','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('87','djycpgk/article/addCategory','添加文章分类','5','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('85','djycpgk/article/delete','文章删除','5','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('83','djycpgk/article/add','文章添加','5','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('81','djycpgk/lottery/paijiang','彩票手动派奖','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('79','djycpgk/lottery/prejk','彩票预设添加','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('77','djycpgk/lottery/showSetting','彩票详细玩法展示','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('75','djycpgk/lottery/change_name','修改彩票名','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('73','djycpgk/lottery/batch_config','彩票赔率批量设置','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('71','djycpgk/lottery/type_switch','彩票开启关闭','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('69','djycpgk/lottery/time_setting','彩票开奖时间设置','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('67','djycpgk/lottery/room_delete','28彩票删除房间','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('65','djycpgk/lottery/room_add','28彩票添加房间','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('63','djycpgk/cash/check','提现确认检查','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('61','djycpgk/recharge/all_confirm','充值批量确认','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('59','djycpgk/cash/confirm','提现确认','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('57','djycpgk/recharge/check','充值确认检查','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('55','djycpgk/recharge/caculate_give','充值赠送计算','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('53','djycpgk/recharge/index','充值列表','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('51','djycpgk/index/history_chat','历史聊天记录','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('49','djycpgk/index/adminchat','发送聊天','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('47','djycpgk/index/left','后台公共左边','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('45','djycpgk/index/childindex','系统首页子页','3','1','系统首页子页','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('43','djycpgk/user/rank_del','会员等级删除','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('41','djycpgk/user/rank_edit','会员等级编辑','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('39','djycpgk/user/backuprelationship','备份会员关系','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('37','djycpgk/user/change_rebate','会员返点方式修改','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('35','djycpgk/user/proxylist','代理列表','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('33','djycpgk/user/commission_sum','会员返佣总和','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('31','djycpgk/user/userfrozen','冻结用户','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('29','djycpgk/user/getIpregion','获取IP所在地','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('27','djycpgk/user/capitaldetail','会员资金明细','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('25','djycpgk/user/renew','会员续费','1','1','会员续费','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('23','djycpgk/user/messageManage','会员消息管理','1','1','会员消息管理','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('21','djycpgk/user/messagelist','消息列表','1','1','消息列表','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('19','djycpgk/user/default_bank','默认银行','1','1','默认银行','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('17','djycpgk/user/user_add','添加会员','1','0','添加会员','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('149','djycpgk/index/search','后台首页---筛选','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('151','djycpgk/lottery/tb_peilv','同类彩票赔率同步','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('153','djycpgk/user/ajax','加载投注明细','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('155','djycpgk/system/hongbao_delete','红包问题删除','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('157','djycpgk/system/hongbaowenti','红包问题设置','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('159','djycpgk/system/user_hongbao','个人红包','3','1','',NULL);
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('160','djycpgk/system/xiazhuliushui','反水设置 ---流水设置','3','1','',NULL);
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('129','djycpgk/Recharge/delete_all','充值删除','1','1','充值删除','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('131','djycpgk/system/qiangtai_ys','前台颜色设置','3','1','前台颜色设置','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('133','djycpgk/user/userthaw','解除冻结用户','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('135','djycpgk/user/user_add2','试玩用户添加','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('137','djycpgk/user/info_edit2','试玩会员查看详情','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('139','djycpgk/user/proxy_child','前台代理关系表---详情','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('141','djycpgk/authority/secondlist_tj','代理统计-二级代理查看','4','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('143','djycpgk/lottery/defaultprize','系统开奖设置','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('145','djycpgk/lottery/paij','彩票中奖匹配--添加','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('147','djycpgk/Authority/qrcode','代理列表---二维码生成','4','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('128','djycpgk/user/info_xg','修改会员','1','1','修改会员信息','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('126','djycpgk/authority/ordinarylist','代理普通会员列表','4','1','代理普通会员列表','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('124','djycpgk/authority/second_delete','删除二级代理','4','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('122','djycpgk/authority/second_add','添加二级代理','4','1','添加二级代理','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('120','djycpgk/authority/proxyedit','顶级/二级/代理修改','4','1','顶级代理修改','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('118','djycpgk/Authority/proxylist','后台顶级代理列表','4','1','后台顶级代理列表','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('112','djycpgk/system/serviceconfig','系统客服设置','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('110','djycpgk/system/lotto','抽奖设置','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('108','djycpgk/system/downbak','下载备份','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('106','djycpgk/system/backupdel','删除备份','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('104','djycpgk/system/bak','系统备份列表','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('102','djycpgk/system/bank_delete','系统收款银行删除','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('100','djycpgk/system/bank_edit','系统收款银行编辑','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('98','djycpgk/system/user','系统会员设置','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('96','djycpgk/system/qrcode_update','系统修改二维码','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('94','djycpgk/system/recharge_rule','系统充值赠送规则列表','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('92','djycpgk/system/setting','系统保存基本设置','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('90','djycpgk/system/index','系统基本设置','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('88','djycpgk/article/editCategory','编辑文章分类','5','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('86','djycpgk/article/category','文章分类列表','5','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('84','djycpgk/article/edit','文章编辑','5','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('82','djycpgk/article/index','文章列表','5','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('80','djycpgk/lottery/return_config','28彩票返水设置','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('78','djycpgk/lottery/lotterymatch','开奖记录','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('76','djycpgk/lottery/array_group_by','彩票数组分组转化','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('74','djycpgk/lottery/odds_setting','彩票详细赔率设置','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('72','djycpgk/lottery/detail_config','彩票玩法设置','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('70','djycpgk/index/object_to_array','彩票对象转数组','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('68','djycpgk/lottery/statusSetting','彩票彩种设置','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('66','djycpgk/lottery/room_edit','28彩票编辑房间','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('64','djycpgk/lottery/room','28彩票房间列表','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('62','djycpgk/cash/all_confirm','提现批量确认','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('60','djycpgk/cash/refuse','提现拒绝','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('58','djycpgk/cash/index','提现列表','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('56','djycpgk/recharge/refuse','充值拒绝','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('54','djycpgk/recharge/confirm','充值确认','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('52','djycpgk/index/checknowpeople','顶部在线人数','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('50','djycpgk/index/newchat','新聊天记录','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('48','djycpgk/index/checknewdata','新上分/新下分','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('46','djycpgk/index/top','后台公共顶部','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('44','djycpgk/index/index','系统首页','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('42','djycpgk/user/rank_add','会员等级添加','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('40','djycpgk/user/ranklist','会员等级列表','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('38','djycpgk/user/getChildrenIds','会员下属查找','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('36','djycpgk/user/transfer','会员转移','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('34','djycpgk/user/subordinate','查询会员下属','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('32','djycpgk/user/statement','会员结算报表','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('30','djycpgk/user/dellog','删除日志','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('28','djycpgk/user/loginlog','会员登录日志','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('26','djycpgk/user/message_delete','会员消息删除','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('24','djycpgk/user/group_send','会员群发消息','1','1','会员群发消息','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('22','djycpgk/user/new_message','会员发送新消息','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('20','djycpgk/user/bettingRecord','投注明细','1','1','投注明细','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('18','djycpgk/user/info_edit','会员详情/编辑','1','1','会员详情/编辑','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('16','djycpgk/user/index','会员列表','1','1','会员列表','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('150','djycpgk/lottery/sort','彩票投注内容排序','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('152','djycpgk/system/app_Download','app下载地址','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('154','djycpgk/system/hongbaoshezhi','抢红包条件设置','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('156','djycpgk/system/wentitianjia','红包问题添加','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('158','djycpgk/system/hongbao_edit','红包问题修改','3','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('161','djycpgk/system/fanshui','系统反水设置','3','1','',NULL);
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('130','djycpgk/lottery/guize','彩种设置—规则说明','2','1','规则说明','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('132','djycpgk/user/sdpj','手动派奖','1','1','手动派奖','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('134','djycpgk/user/swindex','试玩列表','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('136','djycpgk/user/messagelist2','试玩会员消息管理','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('138','djycpgk/system/labagogao','喇叭公告发布','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('140','djycpgk/authority/proxylist_tj','代理统计','4','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('142','djycpgk/authority/normal_tj','代理统计-二级代理-普通用户查看','4','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('144','djycpgk/lottery/matching','彩票中奖匹配','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('146','djycpgk/user/hmDetail','投注明细--查看合买','1','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('148','djycpgk/authority/proxyedit2','代理列表--查看二级代理--修改','4','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('163','djycpgk/lottery/kozkaijiang','龙虎，百家，开奖控制','2','1','','0');
+insert into `think_auth_rule` (`id`, `name`, `title`, `type`, `status`, `condition`, `Superior_id`) values('164','djycpgk/system/jqrshezhi','机器人设置','3','1',NULL,'0');
